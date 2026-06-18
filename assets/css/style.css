@@ -2720,288 +2720,395 @@ padding:12px 22px;
    ONLINE BOOKING SECTION
 ========================================================= */
 
-.online {
+/* =========================================================
+   ONLINE BOOKING SECTION
+========================================================= */
 
-  position: relative;
+.online{
 
-  overflow: hidden;
+  position:relative;
 
-  padding: 90px 5vw;
+  overflow:hidden;
 
-  background: #f8fafc;
+  padding:110px 5vw;
+
+  background:
+    radial-gradient(
+      circle at top center,
+      rgba(212,175,55,.05),
+      transparent 35%
+    ),
+    #f8fafc;
 }
 
-.online-inner {
+.online-inner{
 
-  max-width: 1450px;
+  max-width:1450px;
 
-  margin: 0 auto;
+  margin:0 auto;
 
-  text-align: center;
+  text-align:center;
 }
 
 /* =========================================================
    HEADING
 ========================================================= */
 
-.online-inner h2 {
+.online-inner h2{
 
-  font-family: "Marcellus", serif;
+  font-family:"Marcellus",serif;
 
-  font-size: clamp(42px, 5vw, 60px);
+  font-size:clamp(48px,5vw,46px);
 
-  font-weight: 400;
+  font-weight:400;
 
-  line-height: 1.08;
+  line-height:1.05;
 
-  color: #111827;
+  letter-spacing:-1.5px;
 
-  margin-top: 18px;
+  color:#0f172a;
 
-  margin-bottom: 18px;
+  margin-top:20px;
 
-  letter-spacing: -0.8px;
+  margin-bottom:24px;
 }
 
-.online-inner > p {
+.online-inner > p{
 
-  max-width: 720px;
+  max-width:760px;
 
-  margin: 0 auto 48px;
+  margin:0 auto 60px;
 
-  font-size: 18px;
+  font-size:20px;
 
-  line-height: 1.8;
+  line-height:1.8;
 
-  color: #64748b;
+  color:#64748b;
 }
 
 /* =========================================================
    BOOKING STEPS
 ========================================================= */
 
-.steps {
+.steps{
 
-  display: flex;
+  display:flex;
 
-  justify-content: center;
+  justify-content:center;
 
-  gap: 22px;
+  gap:24px;
 
-  flex-wrap: wrap;
+  flex-wrap:wrap;
 
-  max-width: 980px;
+  max-width:1100px;
 
-  margin: 0 auto 52px;
+  margin:0 auto 60px;
 }
 
-.step {
+.step{
 
-  flex: 1;
+  position:relative;
 
-  min-width: 220px;
+  overflow:hidden;
 
-  display: flex;
+  flex:1;
 
-  flex-direction: column;
+  min-width:250px;
 
-  align-items: center;
+  display:flex;
 
-  gap: 12px;
+  flex-direction:column;
 
-  padding: 30px 24px;
+  align-items:center;
 
-  border-radius: 22px;
+  gap:14px;
 
-  background: #ffffff;
+  padding:20px 22px;
 
-  border: 1px solid rgba(15,23,42,.08);
+  border-radius:26px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #fafafa
+    );
+
+  border:
+    1px solid rgba(212,175,55,.10);
 
   box-shadow:
-    0 10px 25px rgba(15,23,42,.04);
+    0 20px 50px rgba(15,23,42,.05);
 
   transition:
-    transform .3s ease,
-    border-color .3s ease,
-    box-shadow .3s ease;
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
 }
 
-.step:hover {
+.step::before{
 
-  transform: translateY(-6px);
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #D4AF37,
+      transparent
+    );
+
+  opacity:0;
+
+  transition:.35s ease;
+}
+
+.step:hover{
+
+  transform:translateY(-10px);
 
   border-color:
     rgba(212,175,55,.25);
 
   box-shadow:
-    0 20px 40px rgba(15,23,42,.08);
+    0 30px 70px rgba(15,23,42,.10);
 }
 
-/* Number */
+.step:hover::before{
 
-.step .num {
+  opacity:1;
+}
 
-  width: 64px;
+/* NUMBER */
 
-  height: 64px;
+.step .num{
 
-  border-radius: 50%;
+  width:76px;
+  height:76px;
+
+  border-radius:50%;
 
   background:
-    rgba(212,175,55,.08);
+    linear-gradient(
+      135deg,
+      rgba(212,175,55,.12),
+      rgba(212,175,55,.04)
+    );
 
   border:
     1px solid rgba(212,175,55,.25);
 
-  color: #D4AF37;
+  color:#D4AF37;
 
-  display: flex;
+  display:flex;
 
-  align-items: center;
+  align-items:center;
 
-  justify-content: center;
+  justify-content:center;
 
-  font-family: "Marcellus", serif;
+  font-family:"Marcellus",serif;
 
-  font-size: 28px;
+  font-size:34px;
 
   box-shadow:
-    0 10px 20px rgba(212,175,55,.08);
+    0 15px 30px rgba(212,175,55,.10);
 }
 
-.step .t {
+.step .t{
 
-  font-size: 22px;
+  font-size:24px;
 
-  font-weight: 700;
+  font-weight:700;
 
-  color: #111827;
+  color:#0f172a;
 }
 
-.step .d {
+.step .d{
 
-  font-size: 15px;
+  font-size:15px;
 
-  line-height: 1.6;
+  line-height:1.7;
 
-  text-align: center;
+  text-align:center;
 
-  color: #64748b;
+  color:#64748b;
 }
 
 /* =========================================================
    BOOKING PORTAL
 ========================================================= */
 
-.portal {
+.portal{
 
-  position: relative;
+  position:relative;
 
-  overflow: hidden;
+  overflow:hidden;
 
-  border-radius: 28px;
+  border-radius:32px;
 
-  background: #ffffff;
+  background:#ffffff;
 
   border:
-    1px solid rgba(15,23,42,.08);
+    1px solid rgba(212,175,55,.10);
 
   box-shadow:
-    0 25px 60px rgba(15,23,42,.10);
+    0 30px 80px rgba(15,23,42,.10);
 
-  text-align: left;
+  text-align:left;
 
-  padding: 14px;
+  padding:18px;
 }
 
-/* remove old glow */
+/* PREMIUM BROWSER BAR */
 
-.portal::before {
+.portal-top{
 
-  display: none;
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  padding:0 4px 16px;
 }
 
-/* remove top bar */
+.portal-top span{
 
-.portal-bar {
+  width:11px;
+  height:11px;
 
-  display: none;
+  border-radius:50%;
+
+  background:#d1d5db;
 }
 
-/* iframe */
-
-.portal iframe {
-
-  width: 100%;
-
-  height: 1180px;
-
-  border: 0;
-
-  border-radius: 20px;
-
-  background: #ffffff;
-
-  display: block;
+.portal-top span:nth-child(1){
+  background:#ef4444;
 }
 
-/* fallback */
+.portal-top span:nth-child(2){
+  background:#f59e0b;
+}
 
-.portal-fallback {
+.portal-top span:nth-child(3){
+  background:#10b981;
+}
 
-  display: none;
+/* IFRAME */
+
+.portal iframe{
+
+  width:100%;
+
+  height:1180px;
+
+  border:0;
+
+  border-radius:22px;
+
+  background:#ffffff;
+
+  display:block;
+}
+
+/* FALLBACK */
+
+.portal-fallback{
+
+  display:none;
 }
 
 /* =========================================================
-   MOBILE
+   RESPONSIVE
 ========================================================= */
 
-@media (max-width:768px) {
+@media(max-width:992px){
 
-  .online {
+  .online-inner h2{
 
-    padding: 70px 20px;
+    font-size:56px;
   }
 
-  .steps {
+  .online-inner > p{
 
-    flex-direction: column;
-
-    gap: 16px;
-  }
-
-  .step {
-
-    width: 100%;
-
-    min-width: unset;
-  }
-
-  .portal {
-
-    border-radius: 22px;
-
-    padding: 10px;
-  }
-
-  .portal iframe {
-
-    height: 1350px;
-
-    border-radius: 16px;
-  }
-
-  .step .t {
-
-    font-size: 20px;
-  }
-
-  .step .d {
-
-    font-size: 14px;
+    font-size:18px;
   }
 }
 
+@media(max-width:768px){
+
+  .online{
+
+    padding:80px 20px;
+  }
+
+  .steps{
+
+    flex-direction:column;
+
+    gap:18px;
+  }
+
+  .step{
+
+    width:100%;
+
+    min-width:unset;
+
+    padding:32px 24px;
+  }
+
+  .step .num{
+
+    width:68px;
+    height:68px;
+
+    font-size:30px;
+  }
+
+  .step .t{
+
+    font-size:22px;
+  }
+
+  .step .d{
+
+    font-size:14px;
+  }
+
+  .portal{
+
+    border-radius:24px;
+
+    padding:12px;
+  }
+
+  .portal iframe{
+
+    height:1350px;
+
+    border-radius:16px;
+  }
+
+  .online-inner h2{
+
+    font-size:42px;
+
+    line-height:1.1;
+  }
+
+  .online-inner > p{
+
+    font-size:16px;
+  }
+}
 
 
 
@@ -4939,9 +5046,145 @@ padding:12px 22px;
 
 
 
+/* =========================
+   HERO CTA BUTTONS
+========================= */
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.hero-cta .btn,
+.hero-cta .btn-call,
+.hero-cta .btn-whatsapp,
+.hero-cta .btn-reserve {
+  min-width: 220px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 0 0 auto;
+  padding: 0 28px;
+  border-radius: 999px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hero-cta svg,
+.hero-cta i {
+  width: 22px;
+  height: 22px;
+  min-width: 18px;
+  max-width: 24px;
+  min-height: 18px;
+  max-height: 24px;
+  flex: 0 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1;
+  object-fit: contain;
+}
+
+.hero-cta svg {
+  stroke-width: 2;
+}
+
+.hero-cta span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* =========================
+   HERO CTA MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+  .hero-cta {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero-cta .btn,
+  .hero-cta .btn-call,
+  .hero-cta .btn-whatsapp,
+  .hero-cta .btn-reserve {
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+    height: 56px;
+    min-height: 56px;
+    max-height: 56px;
+    padding: 0 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 0 1 320px;
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .hero-cta svg,
+  .hero-cta i,
+  .hero-cta .wa-fa-icon {
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 18px;
+    max-width: 24px;
+    min-height: 18px;
+    max-height: 24px;
+    flex: 0 0 20px;
+    font-size: 20px !important;
+    line-height: 1;
+  }
+}
 
 
 
+.btn-call svg,
+.btn-reserve svg{
+
+  width: 28px !important;
+  height: 28px !important;
+
+  min-width: 28px;
+  min-height: 28px;
+
+  flex-shrink: 0;
+
+  display: block;
+}
+
+.btn-call{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+}
+
+.btn-reserve{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+}
 
 
 
