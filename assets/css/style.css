@@ -3586,12 +3586,18 @@ padding:12px 22px;
 
   inset: 0;
 
-  background:
-    linear-gradient(
-      120deg,
-      rgba(18,18,18,.95),
-      rgba(24,24,28,.88)
-    );
+ background:
+  radial-gradient(
+    circle at left center,
+    rgba(212,175,55,.08),
+    transparent 30%
+  ),
+  linear-gradient(
+    90deg,
+    #07142c 0%,
+    #081a3a 50%,
+    #07142c 100%
+  );
 }
 
 /* subtle luxury glow */
@@ -3782,12 +3788,24 @@ padding:12px 22px;
 
   overflow: hidden;
 
-  background:
+  /* background:
     linear-gradient(
       135deg,
       #111214,
       #17181d
-    );
+    ); */
+    background:
+  radial-gradient(
+    circle at left center,
+    rgba(212,175,55,.08),
+    transparent 30%
+  ),
+  linear-gradient(
+    90deg,
+    #07142c 0%,
+    #081a3a 50%,
+    #07142c 100%
+  );
 
   border:
     1px solid rgba(212,175,55,.12);
@@ -3974,13 +3992,18 @@ padding:12px 22px;
   max-width: var(--maxw);
 
   margin: 0 auto;
-
-  background:
-    linear-gradient(
-      135deg,
-      #0f1014,
-      #15161c
-    );
+background:
+  radial-gradient(
+    circle at left center,
+    rgba(212,175,55,.08),
+    transparent 30%
+  ),
+  linear-gradient(
+    90deg,
+    #07142c 0%,
+    #081a3a 50%,
+    #07142c 100%
+  );
 
   border:
     1px solid rgba(212,175,55,.12);
@@ -4265,12 +4288,18 @@ padding:12px 22px;
 
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      135deg,
-      #111216,
-      #171821
-    );
+ background:
+  radial-gradient(
+    circle at left center,
+    rgba(212,175,55,.08),
+    transparent 30%
+  ),
+  linear-gradient(
+    90deg,
+    #07142c 0%,
+    #081a3a 50%,
+    #07142c 100%
+  );
 
   border:
     1px solid rgba(212,175,55,.10);
@@ -5825,11 +5854,17 @@ padding:12px 22px;
   overflow: hidden;
 
   background:
-    linear-gradient(
-      135deg,
-      #111216,
-      #171821
-    );
+  radial-gradient(
+    circle at left center,
+    rgba(212,175,55,.08),
+    transparent 30%
+  ),
+  linear-gradient(
+    90deg,
+    #07142c 0%,
+    #081a3a 50%,
+    #07142c 100%
+  );
 
   border:
     1px solid rgba(212,175,55,.10);
