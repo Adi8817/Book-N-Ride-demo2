@@ -110,138 +110,118 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <!-- ===================== HERO + LEAD FORM ===================== -->
 <section class="hero">
+
   <div class="hero-bg"></div>
-  <div class="hero-veil"></div>
-  <div class="hero-orb"></div>
+  <div class="hero-overlay"></div>
 
   <div class="wrap">
-    <div class="row g-5 align-items-center">
-      <div class="col-lg-6">
-        <div class="hero-badge">Chauffeured Luxury · Est. 1997</div>
-        <h1>Arrive in <em>Effortless</em> Luxury, Every Mile</h1>
-        <p class="hero-lead">Connecticut's premier limousine &amp; executive car service. Spotless vehicles, professional chauffeurs and flat-rate pricing across CT, NY &amp; NJ — for airports, corporate travel and every special occasion.</p>
 
-        <!-- 3 CTAs moved here from the header -->
-        <div class="hero-cta">
-          <a href="https://wa.me/18004759975"
-   target="_blank"
-   class="btn btn-wa">
+    <div class="hero-content">
 
-  <i class="fa-brands fa-whatsapp wa-icon"></i>
-
-  <span>WhatsApp</span>
-
-</a>
-          <a href="#online" class="btn btn-ghost">Book Online</a>
-          <a href="#lead" class="btn btn-gold">Get a Free Quote</a>
-        </div>
+      <div class="hero-badge">
+        Chauffeured Luxury • Est. 1997
       </div>
 
-      <div class="col-lg-6">
-        <div class="lead-card" id="lead">
-          <!-- FORM -->
-          <form id="leadForm" novalidate>
-            <div class="lead-head">
-              <div class="kicker">Instant Reservation</div>
-              <h2 class="serif">Book Your Limo Quote</h2>
-              <p>Tell us your trip — we'll confirm within minutes.</p>
-            </div>
-            <div class="row g-3">
-              <div class="col-6">
-                <label class="field"><span>Full Name *</span>
-                  <input type="text" name="name" placeholder="John Carter">
-                  <div class="err">Required</div>
-                </label>
-              </div>
-              <div class="col-6">
-                <label class="field"><span>Phone *</span>
-                  <input type="tel" name="phone" placeholder="(203) 555-0142">
-                  <div class="err">Enter a valid number</div>
-                </label>
-              </div>
-              <div class="col-12">
-                <label class="field"><span>Email Address *</span>
-                  <input type="email" name="email" placeholder="john@email.com">
-                  <div class="err">Enter a valid email</div>
-                </label>
-              </div>
-              <div class="col-12">
-                <label class="field"><span>Vehicle Type *</span>
-                  <select name="vehicle">
-                    <option value="">Select a vehicle</option>
-                    <option>Executive Sedan</option>
-                    <option>Luxury SUV</option>
-                    <option>Stretch Limousine (12 pax)</option>
-                    <option>Mercedes Sprinter (8–15 pax)</option>
-                    <option>Ford Transit (10–15 pax)</option>
-                    <option>Party Bus</option>
-                  </select>
-                  <div class="err">Required</div>
-                </label>
-              </div>
-              <div class="col-6">
-                <label class="field"><span>Pickup Location *</span>
-                  <input type="text" name="pickup" placeholder="Fairfield, CT">
-                  <div class="err">Required</div>
-                </label>
-              </div>
-              <div class="col-6">
-                <label class="field"><span>Dropoff Location *</span>
-                  <input type="text" name="dropoff" placeholder="JFK Airport">
-                  <div class="err">Required</div>
-                </label>
-              </div>
-              <div class="col-6">
-                <label class="field"><span>Date *</span>
-                  <input type="date" name="date">
-                  <div class="err">Required</div>
-                </label>
-              </div>
-              <div class="col-6">
-                <label class="field"><span>Time *</span>
-                  <input type="time" name="time">
-                  <div class="err">Required</div>
-                </label>
-              </div>
-              <div class="col-12">
-                <label class="field"><span>No. of Passengers *</span>
-                  <select name="passengers">
-                    <option value="">Select passengers</option>
-                    <option>1</option><option>2</option><option>3</option><option>4</option>
-                    <option>5</option><option>6</option><option>7</option><option>8</option>
-                    <option>10</option><option>12</option><option>14</option><option>15+</option>
-                  </select>
-                  <div class="err">Required</div>
-                </label>
-              </div>
-              <div class="col-12">
-                <label class="field"><span>Special Request <span style="color:#6f6f77;">(optional)</span></span>
-                  <textarea name="special" rows="2" placeholder="Child seat, meet &amp; greet, multiple stops..."></textarea>
-                </label>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-gold" style="width:100%;margin-top:18px;font-size:15.5px;padding:15px;">Book Your Limo Quote →</button>
-            <p class="lead-fine">No payment required · 24/7 dispatch · Confirmation by phone &amp; email</p>
-          </form>
+      <h1>
+        Arrive in
+        <span>Effortless Luxury</span>
+        Every Mile
+      </h1>
 
-          <!-- SUCCESS -->
-          <div class="lead-success" id="leadSuccess">
-            <div style="text-align:center;margin-bottom:20px;">
-              <div class="success-check">✓</div>
-              <h2 class="serif" style="font-size:28px;">Request Received</h2>
-              <p style="font-size:13.5px;color:#9a9aa2;margin-top:6px;max-width:330px;margin:6px auto 0;">Thank you, <span id="successName">there</span>. A dispatcher will confirm your reservation shortly.</p>
-            </div>
-            <div class="summary">
-              <div class="summary-title">Trip Summary</div>
-              <div id="summaryRows"></div>
-            </div>
-            <button type="button" class="btn btn-ghost" id="resetForm" style="width:100%;margin-top:16px;">Book Another Ride</button>
-          </div>
+      <p class="hero-lead">
+        Connecticut's premier limousine & executive transportation service.
+        Airport transfers, corporate travel, weddings and special events
+        across Connecticut, New York & New Jersey.
+      </p>
+
+     <div class="hero-cta">
+
+  <!-- CALL -->
+  <a href="tel:18004759975"
+     class="btn btn-call">
+
+    <svg viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+      19.79 19.79 0 0 1-8.63-3.07
+      19.5 19.5 0 0 1-6-6
+      19.79 19.79 0 0 1-3.07-8.67
+      A2 2 0 0 1 4.11 2h3
+      a2 2 0 0 1 2 1.72
+      c.12.9.32 1.78.59 2.64
+      a2 2 0 0 1-.45 2.11
+      L8.09 9.91
+      a16 16 0 0 0 6 6
+      l1.44-1.16
+      a2 2 0 0 1 2.11-.45
+      c.86.27 1.74.47 2.64.59
+      A2 2 0 0 1 22 16.92z"/>
+    </svg>
+
+    <span>Call Now</span>
+  </a>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/18004759975"
+     target="_blank"
+     class="btn btn-whatsapp">
+
+    <i class="fa-brands fa-whatsapp wa-fa-icon"></i>
+
+    <span>WhatsApp Us</span>
+
+  </a>
+
+  <!-- RESERVE -->
+  <a href="#online"
+     class="btn btn-reserve">
+
+    <span>Reserve Online</span>
+
+    <svg viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2">
+      <path d="M5 12h14"/>
+      <path d="M13 5l7 7-7 7"/>
+    </svg>
+
+  </a>
+
+</div>
+
+      <div class="hero-stats">
+
+        <div class="stat">
+          <strong>27+</strong>
+          <span>Years Experience</span>
         </div>
+
+        <div class="stat">
+          <strong>50K+</strong>
+          <span>Successful Rides</span>
+        </div>
+
+        <div class="stat">
+          <strong>4.9★</strong>
+          <span>Client Rating</span>
+        </div>
+
+        <div class="stat">
+          <strong>24/7</strong>
+          <span>Support</span>
+        </div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
+
 
 <!-- ===================== STATS STRIP ===================== -->
 <!-- <div class="stats">
@@ -256,37 +236,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </div> -->
 
 
-<div class="stats">
-  <div class="wrap">
-    <div class="stats-grid">
 
-      <div class="stat">
-        <div class="stat-icon">✦</div>
-        <div class="n">27+</div>
-        <div class="l">Years of Service</div>
-      </div>
-
-      <div class="stat">
-        <div class="stat-icon">⟡</div>
-        <div class="n">50k+</div>
-        <div class="l">Rides Completed</div>
-      </div>
-
-      <div class="stat">
-        <div class="stat-icon">★</div>
-        <div class="n">4.9</div>
-        <div class="l">Average Rating</div>
-      </div>
-
-      <div class="stat">
-        <div class="stat-icon">◉</div>
-        <div class="n">24/7</div>
-        <div class="l">Live Dispatch</div>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 
 
@@ -1044,9 +994,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
     <div class="footer-grid">
 
-      <!-- LEFT BRAND -->
+      <!-- BRAND -->
       <div class="footer-brand">
-        <img src="assets/images/booknride-logo.webp" alt="Book N Ride">
+
+        <div class="footer-logo-wrap">
+          <img src="assets/images/logo.png" alt="Book N Ride">
+        </div>
 
         <p>
           Premium limousine & executive transportation across
@@ -1058,119 +1011,124 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
           <a href="tel:18004759975" class="contact-item">
             <span class="contact-icon">
-  <i class="fa-solid fa-phone-volume"></i>
-</span>
+              <i class="fa-solid fa-phone-volume"></i>
+            </span>
             <span>1 (800) 475-9975</span>
           </a>
 
           <a href="mailto:Info@bookaridelimo.com" class="contact-item">
             <span class="contact-icon">
-  <i class="fa-solid fa-envelope"></i>
-</span>
+              <i class="fa-solid fa-envelope"></i>
+            </span>
             <span>Info@bookaridelimo.com</span>
           </a>
 
           <div class="contact-item">
             <span class="contact-icon">
-  <i class="fa-solid fa-location-dot"></i>
-</span>
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
             <span>734 Knapps Street, Fairfield, CT 06824</span>
           </div>
 
           <div class="contact-item">
-           <span class="contact-icon">
-  <i class="fa-solid fa-location-dot"></i>
-</span>
+            <span class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
             <span>1215 Oceans Ave, Brooklyn, NY 11230</span>
           </div>
 
         </div>
+
       </div>
 
       <!-- SERVICES -->
-      <!-- SERVICES -->
-<div class="footer-col">
-  <h4>Services</h4>
+      <div class="footer-col">
 
-  <div class="footer-links">
+        <h4>Services</h4>
 
-    <a href="#services">Airport Transportation</a>
-    <a href="#services">Bedford Hills</a>
-    <a href="#services">Bedford, NY</a>
-    <a href="#services">Boston to New York Car Service</a>
-    <a href="#services">Casino Transportation</a>
-    <a href="#services">Corporate Transportation</a>
-    <a href="#services">Cruise Ships Terminal</a>
-    <a href="#services">Funeral Transportation</a>
-    <a href="#services">Group Transportation</a>
-    <a href="#services">Hotel Transportation</a>
-    <a href="#services">Katonah NY</a>
-    <a href="#services">Leisure Transportation</a>
+        <div class="footer-links">
 
-  </div>
-</div>
+          <a href="#services">Airport Transportation</a>
+          <a href="#services">Corporate Transportation</a>
+          <a href="#services">Hotel Transportation</a>
+          <a href="#services">Group Transportation</a>
+          <a href="#services">Cruise Ships Terminal</a>
+          <a href="#services">Boston to New York Car Service</a>
+          <a href="#services">Casino Transportation</a>
+          <a href="#services">Funeral Transportation</a>
+          <a href="#services">Leisure Transportation</a>
+          <a href="#services">Bedford Hills</a>
+          <a href="#services">Bedford, NY</a>
+          <a href="#services">Katonah NY</a>
 
-      <!-- COMPANY -->
+        </div>
+
+      </div>
+
       <!-- LINKS -->
-<div class="footer-col">
-  <h4>Links</h4>
+      <div class="footer-col">
 
-  <div class="footer-links">
+        <h4>Quick Links</h4>
 
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#">Service Area</a>
-    <a href="#fleet">Fleet</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#">Careers</a>
-    <a href="#online">Web App</a>
+        <div class="footer-links">
 
-  </div>
-</div>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#fleet">Fleet</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#">Service Area</a>
+          <a href="#">Careers</a>
+          <a href="#online">Web App</a>
 
-      <!-- RIGHT SIDE -->
+        </div>
+
+      </div>
+
+      <!-- STAY CONNECTED -->
       <div class="footer-col stay-touch">
+
         <h4>Stay Connected</h4>
 
         <p>
           24/7 reservations & dispatch support.
-          Follow us for offers & updates.
+          Follow us for exclusive offers, updates
+          and chauffeur service news.
         </p>
 
         <div class="socials">
 
-  <a href="#" title="Facebook">
-    <i class="fa-brands fa-facebook-f"></i>
-  </a>
+          <a href="#" title="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
 
-  <a href="#" title="LinkedIn">
-    <i class="fa-brands fa-linkedin-in"></i>
-  </a>
+          <a href="#" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-  <a href="#" title="Instagram">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
+          <a href="#" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
 
-  <a href="#" title="Twitter">
-    <i class="fa-brands fa-x-twitter"></i>
-  </a>
+          <a href="#" title="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
 
-</div>
+        </div>
 
         <div class="footer-btns">
-          <a href="#lead" class="btn btn-gold">
+
+          <a href="#lead" class="btn-gold">
             Get Free Quote →
           </a>
 
-         <a href="https://wa.me/18004759975"
-class="btn-whatsapp">
+          <a href="https://wa.me/18004759975" class="btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp Us
+          </a>
 
-  <i class="fa-brands fa-whatsapp"></i>
-  WhatsApp Us
-
-</a>
         </div>
+
       </div>
 
     </div>
@@ -1187,15 +1145,18 @@ class="btn-whatsapp">
       <div class="footer-bottom">
 
         <span>
-          © 2026 Book N Ride Executive Car Service.
+          © 2026 Book N Ride Executive Car Service. All Rights Reserved.
         </span>
 
         <span class="footer-credit">
           Designed by
-          <a href="https://www.duency.com/">DUENCY</a>
+          <a href="https://www.duency.com/" target="_blank">
+            DUENCY
+          </a>
         </span>
 
       </div>
+
     </div>
 
   </div>
